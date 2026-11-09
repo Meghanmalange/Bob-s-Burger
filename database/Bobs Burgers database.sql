@@ -13,6 +13,10 @@ CREATE TABLE BobsBurgers.EMPLOYEE (
 );
 (
 
---CUSTOMER--
- CREATE TABLE BobsBurgers.CUSTOMER (
-    customer_id INT 
+-- Create the Customer table
+CREATE TABLE BobsBurgers.CUSTOMER (
+    customer_id INT IDENTITY(1,1) PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL
+);
+GO
